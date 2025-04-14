@@ -27,142 +27,97 @@ export function Questionnaire() {
 
     const questions: QuestionI[] = [
         {
-            statement: "Quais são as capitais da França?",
-            answers: [
-                { choices: "Paris", correct: true },
-                { choices: "Londres", correct: false },
-                { choices: "Berlim", correct: false },
-                { choices: "Madrid", correct: false },
-            ],
+            "statement": "Qual é a saída do seguinte código em JavaScript?\n```javascript\nconsole.log(2 + '2');\n```",
+            "answers": [
+                { "choices": "4", "correct": false },
+                { "choices": "'22'", "correct": true },
+                { "choices": "22", "correct": false },
+                { "choices": "Erro", "correct": false }
+            ]
         },
         {
-            statement: "Qual é a capital da Itália?",
-            answers: [
-                { choices: "Roma", correct: true },
-                { choices: "Milão", correct: false },
-                { choices: "Veneza", correct: false },
-                { choices: "Florença", correct: false },
-            ],
+            "statement": "Qual das seguintes opções declara uma variável em JavaScript que pode ter seu valor alterado?",
+            "answers": [
+                { "choices": "const nome = 'João';", "correct": false },
+                { "choices": "let idade = 30;", "correct": true },
+                { "choices": "final valor = 10;", "correct": false },
+                { "choices": "readonly pi = 3.14;", "correct": false }
+            ]
         },
         {
-            statement: "Qual é a capital da Alemanha?",
-            answers: [
-                { choices: "Berlim", correct: true },
-                { choices: "Munique", correct: false },
-                { choices: "Hamburgo", correct: false },
-                { choices: "Colônia", correct: false },
-            ],
+            "statement": "O que o operador `===` faz em JavaScript?",
+            "answers": [
+                { "choices": "Compara apenas os valores.", "correct": false },
+                { "choices": "Atribui um valor a uma variável.", "correct": false },
+                { "choices": "Compara os valores e os tipos de dados.", "correct": true },
+                { "choices": "Realiza uma operação matemática de igualdade.", "correct": false }
+            ]
         },
         {
-            statement: "Qual é a capital da Espanha?",
-            answers: [
-                { choices: "Madrid", correct: true },
-                { choices: "Barcelona", correct: false },
-                { choices: "Valência", correct: false },
-                { choices: "Sevilha", correct: false },
-            ],
+            "statement": "Qual das seguintes opções representa um array em Python?",
+            "answers": [
+                { "choices": "(1, 2, 3)", "correct": false },
+                { "choices": "{1, 2, 3}", "correct": false },
+                { "choices": "[1, 2, 3]", "correct": true },
+                { "choices": "'1, 2, 3'", "correct": false }
+            ]
         },
         {
-            statement: "Qual é a capital do Reino Unido?",
-            answers: [
-                { choices: "Londres", correct: true },
-                { choices: "Manchester", correct: false },
-                { choices: "Liverpool", correct: false },
-                { choices: "Edimburgo", correct: false },
-            ],
+            "statement": "Qual é a função utilizada em Python para imprimir algo no console?",
+            "answers": [
+                { "choices": "log()", "correct": false },
+                { "choices": "print()", "correct": true },
+                { "choices": "console.log()", "correct": false },
+                { "choices": "output()", "correct": false }
+            ]
         },
         {
-            statement: "Qual é a capital do Japão?",
-            answers: [
-                { choices: "Tóquio", correct: true },
-                { choices: "Quioto", correct: false },
-                { choices: "Osaka", correct: false },
-                { choices: "Nagoya", correct: false },
-            ],
+            "statement": "O que é um loop `for` geralmente usado em programação?",
+            "answers": [
+                { "choices": "Para definir condições.", "correct": false },
+                { "choices": "Para repetir um bloco de código um número específico de vezes.", "correct": true },
+                { "choices": "Para declarar variáveis.", "correct": false },
+                { "choices": "Para criar funções.", "correct": false }
+            ]
         },
         {
-            statement: "Qual é a capital da China?",
-            answers: [
-                { choices: "Pequim", correct: true },
-                { choices: "Xangai", correct: false },
-                { choices: "Hong Kong", correct: false },
-                { choices: "Cantão", correct: false },
-            ],
+            "statement": "Qual das seguintes opções define uma função em JavaScript?",
+            "answers": [
+                { "choices": "method myFunction() {}", "correct": false },
+                { "choices": "function = myFunction() {}", "correct": false },
+                { "choices": "function myFunction() {}", "correct": true },
+                { "choices": "def myFunction() {}", "correct": false }
+            ]
         },
         {
-            statement: "Qual é a capital dos Estados Unidos?",
-            answers: [
-                { choices: "Washington, D.C.", correct: true },
-                { choices: "Nova York", correct: false },
-                { choices: "Los Angeles", correct: false },
-                { choices: "Chicago", correct: false },
-            ],
+            "statement": "O que significa a sigla HTML?",
+            "answers": [
+                { "choices": "Hyper Text Markup Language", "correct": true },
+                { "choices": "Highly Typed Machine Language", "correct": false },
+                { "choices": "Hyperlink and Text Management Language", "correct": false },
+                { "choices": "Home Tool Markup Language", "correct": false }
+            ]
         },
         {
-            statement: "Qual é a capital do Canadá?",
-            answers: [
-                { choices: "Ottawa", correct: true },
-                { choices: "Toronto", correct: false },
-                { choices: "Montreal", correct: false },
-                { choices: "Vancouver", correct: false },
-            ],
+            "statement": "Qual tag HTML é usada para criar um parágrafo?",
+            "answers": [
+                { "choices": "<h1>", "correct": false },
+                { "choices": "<div>", "correct": false },
+                { "choices": "<p>", "correct": true },
+                { "choices": "<span>", "correct": false }
+            ]
         },
         {
-            statement: "Qual é a capital da Austrália?",
-            answers: [
-                { choices: "Camberra", correct: true },
-                { choices: "Sydney", correct: false },
-                { choices: "Melbourne", correct: false },
-                { choices: "Brisbane", correct: false },
-            ],
-        },
-        {
-            statement: "Qual é a capital do Brasil?",
-            answers: [
-                { choices: "Brasília", correct: true },
-                { choices: "Rio de Janeiro", correct: false },
-                { choices: "São Paulo", correct: false },
-                { choices: "Salvador", correct: false },
-            ],
-        },
-        {
-            statement: "Qual é a capital da Argentina?",
-            answers: [
-                { choices: "Buenos Aires", correct: true },
-                { choices: "Córdoba", correct: false },
-                { choices: "Rosário", correct: false },
-                { choices: "Mendoza", correct: false },
-            ],
-        },
-        {
-            statement: "Qual é a capital da Índia?",
-            answers: [
-                { choices: "Nova Delhi", correct: true },
-                { choices: "Mumbai", correct: false },
-                { choices: "Calcutá", correct: false },
-                { choices: "Chennai", correct: false },
-            ],
-        },
-        {
-            statement: "Qual é a capital da Rússia?",
-            answers: [
-                { choices: "Moscou", correct: true },
-                { choices: "São Petersburgo", correct: false },
-                { choices: "Novosibirsk", correct: false },
-                { choices: "Ecaterimburgo", correct: false },
-            ],
-        },
-        {
-            statement: "Qual é a capital da África do Sul?",
-            answers: [
-                { choices: "Pretória", correct: true },
-                { choices: "Cidade do Cabo", correct: false },
-                { choices: "Bloemfontein", correct: false },
-                { choices: "Joanesburgo", correct: false },
-            ],
-        },
+            "statement": "Qual dos seguintes não é um tipo de dado primitivo comum em muitas linguagens de programação?",
+            "answers": [
+                { "choices": "inteiro (integer)", "correct": false },
+                { "choices": "booleano (boolean)", "correct": false },
+                { "choices": "string", "correct": false },
+                { "choices": "lista (list)", "correct": true }
+            ]
+        }
     ]
-
+    
     const changePlayers = () => {
         if (player1) {
             setPlayer1(false)
@@ -178,7 +133,6 @@ export function Questionnaire() {
         if (questions.length > currentIndex + 1) {
             setCurrentIndex(currentIndex + 1)
             setShowModal(false)
-            console.log('teste')
         } else {
             setShowModal(true)
             setMessage(true)
