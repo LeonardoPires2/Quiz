@@ -7,19 +7,17 @@
   background: linear-gradient(10deg, #b8b8b8, #002e98);
 }
 
-/* styles.module.css (ou seu arquivo de estilos CSS Modules) */
-
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Garante que fique acima de outros elementos */
+  z-index: 1000;
 }
 
 .modalContent {
@@ -29,8 +27,8 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   text-align: center;
   width: 80%;
-  max-width: 400px; /* Largura máxima para não ficar muito grande */
-  animation: fadeIn 0.3s ease-out forwards; /* Animação de entrada */
+  max-width: 400px;
+  animation: fadeIn 0.3s ease-out forwards;
 }
 
 .modalHeader {
@@ -68,7 +66,7 @@
 }
 
 .nextButton {
-  background-color: #007bff; /* Cor primária */
+  background-color: #007bff;
   color: white;
   padding: 1rem 2rem;
   border: none;
