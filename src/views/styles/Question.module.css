@@ -1,0 +1,140 @@
+.container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4%;
+  background: linear-gradient(10deg, #b8b8b8, #002e98);
+}
+
+/* styles.module.css (ou seu arquivo de estilos CSS Modules) */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.modalContent {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 80%;
+  max-width: 400px; /* Largura máxima para não ficar muito grande */
+  animation: fadeIn 0.3s ease-out forwards; /* Animação de entrada */
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.modalCloseButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s ease-in-out;
+}
+
+.modalCloseButton:hover {
+  color: #333;
+}
+
+.modalBody {
+  margin-bottom: 2rem;
+}
+
+.modalMessage {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.nextButton {
+  background-color: #007bff; /* Cor primária */
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nextButton:hover {
+  background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.title {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.answers {
+  display: inline-grid;
+}
+
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 23px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: rgb(67 61 61);
+  width: 40rem;
+}
+
+.buttonDisable {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 23px;
+  font: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #b9b9b9;
+  color: rgb(0, 0, 0);
+  width: 40rem;
+}
+
+.buttonNext {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 23px;
+  cursor: pointer;
+  margin-left: 215px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d4caca;
+  color: rgb(0, 0, 0);
+  width: 15rem;
+}
+
+.button:hover {
+  background-color: #eee9b939;
+}

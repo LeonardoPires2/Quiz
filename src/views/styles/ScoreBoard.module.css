@@ -1,0 +1,60 @@
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(10deg, #002e98, #b8b8b8);
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .score span {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .score p {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  .time {
+    width: 7rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 80rem;
+  }
+  
+  .time:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .time:active {
+    background-color: #004085;
+    transform: scale(0.95);
+  }
+
+  span {
+    font-size: 30px;
+  }
