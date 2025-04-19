@@ -1,14 +1,14 @@
-# 🧠 Quiz de Programação
+# 🧠 Programming Quiz
 
-Um projeto React desenvolvido para testar seus conhecimentos em programação com perguntas de múltipla escolha. Ideal para estudantes, desenvolvedores e entusiastas da área!
+A React project designed to test your programming knowledge with multiple choice questions. Ideal for students, developers and programming enthusiasts!
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
-- ⚛️ **React** (com Hooks)
-- 💅 **Styled Components** ou **CSS Modules**
-- 📄 **JSON** como base de dados das perguntas
+- ⚛️ **React** (with Hooks)
+- 💅 **Styled Components** or **CSS Modules**
+- 📄 **JSON** as question database
 - ✅ **TypeScript**
 - 📚 **React Router**
 
@@ -20,12 +20,12 @@ Um projeto React desenvolvido para testar seus conhecimentos em programação co
 
 ---
 
-## 🎮 Funcionalidades
+## 🎮 Features
 
-- [x] Exibição de perguntas e alternativas
-- [x] Navegação entre perguntas
-- [x] Cálculo de pontuação final
-- [x] Feedback no final (Ex: “Parabéns!” ou “Tente novamente!”)
-- [x] Reiniciar o quiz
+- [x] Display of questions and alternatives
+- [x] Navigation between questions
+- [x] Calculation of final score
+- [x] Feedback at the end (Ex: “Congratulations!” or “Try again!”)
+- [x] Restart the quiz
 
 ---
